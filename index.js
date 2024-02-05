@@ -4,6 +4,7 @@ let calcMap = {
     "2": 0,
     "3": 0
 }
+// Recursive
 function fibonacci(n, stepCounter= 0) {
     calcMap["1"]++
     if (n < 2) {
@@ -13,7 +14,7 @@ function fibonacci(n, stepCounter= 0) {
 }
 
 
-
+// Simple for
 function fibonacci1(n) {
     let result = [0,1];
     for (let i = 1; i< n; i++) {
@@ -24,7 +25,7 @@ function fibonacci1(n) {
 }
 
 
-
+// Recursive + DP
 function fibonacciMaster() {
     let cache = {}
     return function fib (n) {
